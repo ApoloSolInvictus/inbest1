@@ -38,6 +38,11 @@ body {
 .inbest-logo { align-items: center; color: #fff; display: inline-flex; font-family: 'Josefin Sans', sans-serif; font-size: 22px; font-weight: 700; gap: 9px; letter-spacing: .02em; text-transform: none; }
 .inbest-logo span { align-items: center; background: #14c9c0; border-radius: 7px; color: #08172f; display: inline-flex; font-size: 15px; height: 34px; justify-content: center; letter-spacing: -.1em; width: 34px; }
 .header__logo .inbest-logo { color: #fff; }
+.header__nav__menu { display: flex !important; justify-content: center; margin-right: 0 !important; width: 100%; }
+.header__nav__menu ul { display: inline-flex !important; justify-content: center; margin: 0; padding: 0; }
+.header__nav__menu ul li { margin-right: 34px !important; }
+.header__nav__menu ul li:last-child { margin-right: 0 !important; }
+.header__nav__option { text-align: right; }
 .campaign-card { background: #121f3a; border-top: 3px solid #14c9c0; color: #fff; padding: 31px; }
 .campaign-card__top, .campaign-card__meta, .campaign-card__footer { color: rgba(255,255,255,.58); display: flex; font-family: 'Josefin Sans', sans-serif; font-size: 10px; justify-content: space-between; letter-spacing: .08em; text-transform: uppercase; }
 .campaign-live { color: #c9ed6a; }.campaign-live i { font-size: 7px; margin-right: 4px; }.campaign-card > strong { color: #14c9c0; display: block; font-family: 'Josefin Sans', sans-serif; font-size: 75px; line-height: 1; margin-top: 45px; }.campaign-card > p { color: #fff; font-family: 'Josefin Sans', sans-serif; font-size: 15px; text-transform: uppercase; }.campaign-bar { background: rgba(255,255,255,.14); height: 6px; margin: 30px 0 10px; }.campaign-bar span { background: #14c9c0; display: block; height: 100%; }.campaign-card__meta { font-size: 9px; }.campaign-card__footer { border-top: 1px solid rgba(255,255,255,.15); margin-top: 30px; padding-top: 18px; text-transform: none; }.campaign-card__footer i { color: #c9ed6a; font-size: 21px; }
@@ -45,6 +50,7 @@ body {
 .portfolio-intro { color: #666; font-family: 'Josefin Sans', sans-serif; font-size: 16px; line-height: 1.7; margin-top: 38px; }.portfolio__item__hover { background: linear-gradient(180deg, transparent 15%, rgba(8,23,47,.95) 100%); bottom: 0; color: #fff; left: 0; opacity: 0; padding: 28px; position: absolute; right: 0; top: 0; transition: .3s; }.portfolio__item:hover .portfolio__item__hover { opacity: 1; }.portfolio__item__hover span { color: #14c9c0; font-family: 'Josefin Sans', sans-serif; font-size: 10px; letter-spacing: .08em; }.portfolio__item__hover h4 { color: #fff; font-size: 25px; margin: 70px 0 8px; }.portfolio__item__hover p { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.5; }.portfolio__item--large { min-height: 420px; }
 .callto__text h2 { max-width: 680px; }.footer__top__logo .inbest-logo { margin-bottom: 18px; }.footer__option__item a { color: #14c9c0; }
 @media only screen and (max-width: 767px) { .campaign-card { margin-top: 25px; }.campaign-card > strong { font-size: 58px; }.portfolio__item--large { min-height: 300px; }.portfolio__item__hover h4 { margin-top: 45px; }.inbest-logo { font-size: 18px; } }
+@media only screen and (max-width: 991px) { .header__nav__menu { justify-content: flex-end; }.header__nav__menu ul { display: block; }.header__nav__menu ul li { margin-right: 0; } }
 
 h1,
 h2,
