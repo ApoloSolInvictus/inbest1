@@ -2194,3 +2194,33 @@ ol {
     padding: 30px 40px 35px 35px;
   }
 }
+
+/* Mobile navigation wins over the legacy template rules above. */
+@media only screen and (max-width: 991px) {
+  .header { background: rgba(7, 15, 45, .88) !important; -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); z-index: 30 !important; }
+  .header > .container { max-width: none; padding: 0 16px; position: relative; }
+  .header > .container > .row { align-items: center; display: flex; flex-wrap: nowrap; min-height: 76px !important; }
+  .header > .container > .row > .col-lg-2:first-child { flex: 1 1 auto; max-width: none; width: auto; }
+  .header > .container > .row > .col-lg-8, .header > .container > .row > .col-lg-2:last-child, .header__nav__menu { display: none !important; }
+  .header__logo { padding: 0 !important; }
+  #mobile-menu-wrap { display: block; left: 16px; position: absolute; right: 16px; top: 17px; z-index: 40; }
+  #mobile-menu-wrap .slicknav_menu { background: transparent !important; display: block !important; padding: 0 !important; position: relative; }
+  #mobile-menu-wrap .slicknav_btn { align-items: center; background: rgba(7, 22, 47, .82) !important; border: 1px solid rgba(255,255,255,.28); border-radius: 12px; display: flex; float: none; height: 42px; justify-content: center; margin: 0 0 0 auto; padding: 0; width: 42px; }
+  #mobile-menu-wrap .slicknav_menutxt { display: none !important; }
+  #mobile-menu-wrap .slicknav_icon { display: flex; float: none; flex-direction: column; height: 18px; justify-content: space-between; margin: 0; width: 22px; }
+  #mobile-menu-wrap .slicknav_icon-bar { background: #fff !important; box-shadow: none; height: 2px; margin: 0 !important; width: 22px; }
+  #mobile-menu-wrap .slicknav_nav { background: rgba(7,22,47,.98) !important; border: 1px solid rgba(46,216,208,.25); border-radius: 16px; box-shadow: 0 22px 45px rgba(0,0,0,.3); clear: both; margin: 10px 0 0; padding: 10px; width: 100%; }
+  #mobile-menu-wrap .slicknav_nav ul { margin: 0; padding: 0; }
+  #mobile-menu-wrap .slicknav_nav li { margin: 0; }
+  #mobile-menu-wrap .slicknav_nav li + li { border-top: 1px solid rgba(255,255,255,.1); }
+  #mobile-menu-wrap .slicknav_nav .slicknav_row, #mobile-menu-wrap .slicknav_nav a { border-radius: 10px; color: rgba(255,255,255,.82); font-family: "Play", sans-serif; font-size: 14px; letter-spacing: .06em; margin: 0; padding: 13px 14px; text-transform: uppercase; }
+  #mobile-menu-wrap .slicknav_nav .slicknav_row:hover, #mobile-menu-wrap .slicknav_nav a:hover { background: rgba(0,191,231,.14); color: #fff; }
+  #mobile-menu-wrap .slicknav_nav .mobile-join { border-top: 0; margin-top: 8px; padding-top: 8px; }
+  #mobile-menu-wrap .slicknav_nav .mobile-join a { background: #00bfe7; color: #07162f; font-weight: 700; text-align: center; }
+}
+
+@media only screen and (max-width: 480px) {
+  .header > .container > .row { min-height: 70px !important; }
+  #mobile-menu-wrap { top: 14px; }
+  .inbest-logo img { height: 32px; width: 132px; }
+}

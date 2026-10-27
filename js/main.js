@@ -99,8 +99,25 @@
 		Navigation
 	--------------------*/
     $(".mobile-menu").slicknav({
+        label: '',
         prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
+        allowParentLinks: true,
+        closeOnClick: true,
+        init: function () {
+            var mobileMenu = $('#mobile-menu-wrap');
+            var menuButton = mobileMenu.find('.slicknav_btn');
+            menuButton.attr({ 'aria-label': 'Open navigation', 'aria-expanded': 'false' });
+            mobileMenu.find('.slicknav_nav').attr('aria-label', 'Project navigation');
+            if (!mobileMenu.find('.mobile-join').length) {
+                mobileMenu.find('.slicknav_nav').append('<li class="mobile-join"><a href="https://inbestmen.wstudio3d.com/" target="_blank" rel="noopener">Join inBestmen</a></li>');
+            }
+        },
+        afterOpen: function () {
+            $('#mobile-menu-wrap .slicknav_btn').attr({ 'aria-label': 'Close navigation', 'aria-expanded': 'true' });
+        },
+        afterClose: function () {
+            $('#mobile-menu-wrap .slicknav_btn').attr({ 'aria-label': 'Open navigation', 'aria-expanded': 'false' });
+        }
     });
 
     /*------------------
