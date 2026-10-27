@@ -37,6 +37,8 @@ body {
 /* Invest in inBest campaign layer */
 .inbest-logo { align-items: center; color: #fff; display: inline-flex; font-family: 'Josefin Sans', sans-serif; font-size: 22px; font-weight: 700; gap: 9px; letter-spacing: .02em; text-transform: none; }
 .inbest-logo img { background: #fff; border-radius: 7px; display: block; height: 39px; object-fit: contain; padding: 2px 8px; width: 164px; }
+.coin-token { align-items: center; display: inline-flex; flex: 0 0 auto; height: 1.05em; justify-content: center; margin: 0 .08em; vertical-align: -.12em; width: 1.05em; }
+.coin-token img { display: block; height: 100%; object-fit: contain; width: 100%; }
 .header__logo .inbest-logo { color: #fff; }
 .header > .container > .row { align-items: center; min-height: 94px; }
 .header__logo { padding: 0 !important; }
